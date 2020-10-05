@@ -18,48 +18,50 @@
         </header>
         <form id="survey-form" action="#">
             <div class="form-group">
-                <label for="">Name</label>
-                <input type="text" name="" id="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
             </div>
             <div class="form-group">
-                <label for="">Email</label>
-                <input type="email" name="" id="">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
             </div>
             <div class="form-group">
-                <label for="">Age</label>
-                <input type="number" min="6" max="100" name="" id="">
+                <label for="age">Age</label>
+                <input type="number" min="6" max="100" name="age" id="age">
             </div>
             <div class="form-group">
-                <label for="">Neighborhood</label>
-                <select name="" id="dropdown"></select>
+                <label for="neighborhood">Neighborhood</label>
+                <select name="neighborhood" id="dropdown"></select>
             </div>
             <div id="recommend"class="form-group">
                 <p>Would you recommend San Diego? <span id="small-text">(Check all that apply)</span></p>
-                <input type="radio" name="" id="">
+                <input type="radio" value="yes" name="recommend_sd" id="yes">
                 <label for="yes">Yes</label>
-                <input type="radio" name="" id="">
+                <input type="radio" value="no" name="recommend_sd" id="no">
                 <label for="no">No</label>
-                <input type="radio" name="" id="">
+                <input type="radio" value="unsure" name="recommend_sd" id="unsure">
                 <label for="unsure">Unsure</label>
             </div>
             <div class="form-group">
-                <p></p>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
+                <p>What are your favorites SD activities?</p>
+                <input type="checkbox" value="beach" name="activities" id="beach">
+                <label for="beach">Beach Going</label>
+                <input type="checkbox" name="activities" id="running">
+                <label for="running">Running</label>
+                <input type="checkbox" name="activities" id="hiking">
+                <label for="hiking">Hiking</label>
+                <input type="checkbox" name="activities" id="picnic">
+                <label for="picnic">Picnic in the Park</label>
+                <input type="checkbox" name="activities" id="whale-watching">
+                <label for="whale-watching">Whale Watching</label>
+                <input type="checkbox" name="activities" id="hang-gliding">
+                <label for="hang-gliding">Hang-gliding</label>
             </div>
             <div class="form-group">
-
+                <label for="suggestions">Any comments or suggestions?</label>
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
             </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
